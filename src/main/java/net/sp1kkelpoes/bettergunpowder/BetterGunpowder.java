@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sp1kkelpoes.bettergunpowder.item.ModCreativeModeTabs;
 import net.sp1kkelpoes.bettergunpowder.item.ModItems;
 import org.slf4j.Logger;
 
@@ -29,6 +30,8 @@ public class BetterGunpowder
     public BetterGunpowder(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
