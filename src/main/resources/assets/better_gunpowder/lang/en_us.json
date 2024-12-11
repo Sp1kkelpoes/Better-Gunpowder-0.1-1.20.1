@@ -2,5 +2,7 @@
   "item.better_gunpowder.sulfur": "Sulfur",
   "item.better_gunpowder.potassiumnitrate": "Potassium Nitrate",
 
+  "block.better_gunpowder.sulfur_ore": "Sulfur Ore",
+
   "creativetab.bettergunpowder_tab": "Better Gunpowder"
 }

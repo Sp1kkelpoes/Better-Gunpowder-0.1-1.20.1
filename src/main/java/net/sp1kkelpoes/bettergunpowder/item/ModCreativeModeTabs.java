@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.sp1kkelpoes.bettergunpowder.BetterGunpowder;
+import net.sp1kkelpoes.bettergunpowder.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -24,6 +25,7 @@ public class ModCreativeModeTabs {
 
                        pOutput.accept(Items.GUNPOWDER);
 
+                       pOutput.accept(ModBlocks.SULFUR_ORE.get());
 
                     })
                     .build());
