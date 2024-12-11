@@ -49,6 +49,7 @@ public class BetterGunpowder
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SULFUR);
+            event.accept(ModItems.POTASSIUMNITRATE);
         }
     }
 
