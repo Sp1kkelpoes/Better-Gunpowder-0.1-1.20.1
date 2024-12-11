@@ -21,6 +21,9 @@ public class ModBlocks {
 public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
         () -> new Block(BlockBehaviour.Properties.of())); // Will change to custom!
 
+    public static final RegistryObject<Block> POTASSIUMNITRATE_ORE = registerBlock("potassiumnitrate_ore",
+            () -> new Block(BlockBehaviour.Properties.of())); // Will change to custom!
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

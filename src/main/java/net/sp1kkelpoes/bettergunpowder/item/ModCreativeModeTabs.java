@@ -26,7 +26,7 @@ public class ModCreativeModeTabs {
                        pOutput.accept(Items.GUNPOWDER);
 
                        pOutput.accept(ModBlocks.SULFUR_ORE.get());
-
+                       pOutput.accept(ModBlocks.POTASSIUMNITRATE_ORE.get());
                     })
                     .build());
 
