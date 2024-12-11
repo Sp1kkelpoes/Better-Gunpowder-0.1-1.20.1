@@ -1,4 +1,6 @@
 {
   "item.better_gunpowder.sulfur": "Sulfur",
-  "item.better_gunpowder.potassiumnitrate": "Potassium Nitrate"
+  "item.better_gunpowder.potassiumnitrate": "Potassium Nitrate",
+
+  "creativetab.bettergunpowder_tab": "Better Gunpowder"
 }

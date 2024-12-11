@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> BETTERGUNPOWDER_TAB = CREATIVE_MODE_TABS.register("bettergunpowder_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.GUNPOWDER))
-                    .title(Component.translatable("Better Gunpowder"))
+                    .title(Component.translatable("creativetab.bettergunpowder_tab"))
                     .displayItems((pParameters, pOutput) -> {
                        pOutput.accept(ModItems.POTASSIUMNITRATE.get());
                        pOutput.accept(ModItems.SULFUR.get());
