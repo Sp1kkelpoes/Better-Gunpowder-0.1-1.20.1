@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
 
                        pOutput.accept(ModBlocks.SULFUR_ORE.get());
                        pOutput.accept(ModBlocks.POTASSIUMNITRATE_ORE.get());
+                       pOutput.accept(ModItems.RAWSULFUR.get());
                     })
                     .build());
 
