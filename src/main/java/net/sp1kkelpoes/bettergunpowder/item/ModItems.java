@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAWSULFUR = ITEMS.register("rawsulfur",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAWPOTASSIUMNITRATE = ITEMS.register("rawpotassiumnitrate",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
