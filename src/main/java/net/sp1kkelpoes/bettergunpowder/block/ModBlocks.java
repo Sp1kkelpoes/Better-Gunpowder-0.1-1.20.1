@@ -1,9 +1,11 @@
 package net.sp1kkelpoes.bettergunpowder.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,10 +21,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, BetterGunpowder.MOD_ID);
 
     public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE))); // Will change to custom!
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE),
+                    UniformInt.of(3, 6))); // Will change to custom!
 
     public static final RegistryObject<Block> POTASSIUMNITRATE_ORE = registerBlock("potassiumnitrate_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE))); // Will change to custom!
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE),
+                    UniformInt.of(3, 6))); // Will change to custom!
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
