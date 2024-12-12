@@ -18,12 +18,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BetterGunpowder.MOD_ID);
 
-public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
-        () -> new Block(BlockBehaviour.Properties.of())); // Will change to custom!
+    public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE))); // Will change to custom!
 
     public static final RegistryObject<Block> POTASSIUMNITRATE_ORE = registerBlock("potassiumnitrate_ore",
-            () -> new Block(BlockBehaviour.Properties.of())); // Will change to custom!
-
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE))); // Will change to custom!
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
